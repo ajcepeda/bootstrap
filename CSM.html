@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UP Mindanao | Academic Units</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="CSM.css">
+
+    <title>UP Mindanao | Academic Units</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="CHSS.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <section class="header">
+
+        <!---- navigation bar ---->
+       <nav class="navbar navbar-expand-md navbar-light">
+        <a href="main.html">
+            <img src= "uplogo.png" alt="UP Mindanao Logo">
+        </a>  
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+           <div class="nav-links collapse navbar-collapse" id="toggleMobileMenu">
+               <ul class="navbar-nav ml-auto">
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="acadunits.html">Academic Units</a></li>
+                   <li><a href="acadprogs.html">Academic Programs</a></li>
+                   <li><a href="signup.html">Sign Up</a></li>
+                   <li><a href="login.html">Log In</a></li>
+               </ul>
+           </div>
+       </nav>
+    </section>
+
+    
+    <div id="main">
+        <br><br><br><br>
+        <h2>ACADEMIC UNITS</h2>
+        <br><br>
+        <h3> To know more details about our Academic Units, please select a college below. </h3>
+        <br>
+
+        <div class="select">
+        <ul class="menu">
+            <li>
+            <a href="acadunits.html">-Select a College-</a>
+            <ul class="sub">
+                    <li><a href="CHSS.html">CHSS</a></li>
+                    <li><a href="CSM.html">CSM</a></li>
+                    <li><a href="SOM.html">SOM</a></li>
+            </ul>
+            </li>
+        </ul>
+        </div>
+        <br>
+
+    <div class="CSM">
+        <h4>COLLEGE OF SCIENCE AND MATHEMATICS</h4>
+        <br><br>
+        <p>&nbsp;&nbsp;The College of Science and Mathematics is dedicated to the preparation of the next generation of scientists and mathematicians for vital and diverse careers in STEM using innovative High Impact Practices. The degree programs under this college are BS Applied Mathematics, BS Biology, BS Computer Science, and BS Food Technology.</p>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".main li").hover(
+            function(){
+                //$('ul.sub', this).slideDown(500);
+                //$('>ul.sub', this).slideDown(500);
+                $('>ul.sub:not(:animated)', this).slideDown(500);
+            },
+            function(){
+                //$('ul.sub',this).slideUp(300);
+                $('>ul.sub',this).slideUp(300);
+            }
+        );
+    });
+</script>
+</body>
+</html>

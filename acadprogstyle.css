@@ -1,0 +1,227 @@
+/* CSS styling for acadsprog */
+
+/* styles the menu */
+@font-face 
+{ 
+    font-family: josefin-sans; 
+    src: url('JosefinSans-Regular.ttf'); 
+} 
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: josefin-sans;
+}
+
+
+body 
+{
+    background-color: #FAF9F6;
+    background-size: cover;
+    min-height:100vh;
+    width: 100%;
+    position: inherit;
+    text-align: center;
+}
+
+.header
+{   
+    position: relative;
+    min-height: 20vh;;
+    width: 100%;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    background-color: #FAF9F6;
+    border-bottom: 5px solid #014221;
+}
+
+nav a img
+{
+    width: 10vw;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li:hover
+{
+    background-color: #7b1111;
+}
+
+
+.nav-links ul li a
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.nav-links ul li a:hover
+{
+    color: #fff;
+}
+
+.nav-links li ul
+{
+    text-align: right;
+    display: none;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    z-index: 99999;
+}
+
+.navbar-toggler-icon 
+{
+    color: #000;
+    border: none;
+  
+}
+
+.navlinks .navbar-collapse
+{
+    list-style-position: inherit;
+    text-align: right;
+}
+
+
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* styles the picture */
+.accordion-title-div{
+  background-image: url("oble_edited.jpg");
+  height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:0%;
+  width: 100%;
+  padding: 10px;
+}
+
+/* styles the title */
+.accordion-main-title{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.2vw;
+  color: #014421;
+  margin: 0%;
+}
+
+/* styles the whole accordion */
+
+.accordion {
+  font-size: 1.5vw;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 0 20px 25px rgba(0,0,0,0.18);
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+  padding: 8px 8px;
+  background: #7b1111;
+  color: white;
+  vertical-align: baseline;
+  cursor: pointer;
+  font-size: 1.5vw;
+  letter-spacing: .2em;
+  transition: all .3s;
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: normal;
+  
+}
+
+.accordion-sub__title {
+  font-weight: bold;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #7b1111;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  background: #014421;
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #FFFAFA;
+  color: black;
+  display: none;
+  font-style: normal;
+}
+/* styles the content of each box */
+.accordion-body__contents {
+  padding: 1.5em 2em;
+  font-size: .85em;
+  text-align: justify;
+  font-style: normal;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+/* styles the arrows */
+.accordion__item > .accordion-header:after {
+  content: "\005E";
+  font-weight: bold;
+  font-size: 1.2em;
+  float: right;
+  position: relative;
+  top: -2px;
+  transition: .3s all;
+  transform: rotate(0deg);
+  margin-right: 15px;
+  vertical-align: baseline;
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header {
+  background: #014421;
+}
+
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: black;
+}
+

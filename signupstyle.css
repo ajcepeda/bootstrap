@@ -1,0 +1,316 @@
+@font-face 
+{ 
+    font-family: josefin-sans; 
+    src: url('JosefinSans-Regular.ttf'); 
+} 
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: josefin-sans;
+    box-sizing: border-box;
+}
+
+body 
+{
+    background-color: #7b1111;
+    background-size: cover;
+    min-height:100vh;
+    width: 100%;
+    position: inherit;
+    text-align: center;
+}
+
+#main
+{
+    height: relative;
+    background-color: #7b1111;
+    background-size: contain;
+}
+
+.header
+{   
+    position: relative;
+    min-height: 20vh;;
+    width: 100%;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    background-color: #FAF9F6;
+    border-bottom: 5px solid #014221;
+}
+
+nav a img
+{
+    width: 10vw;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.nav-links ul li:hover
+{
+    background-color: #7b1111;
+}
+
+
+.nav-links ul li a
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.nav-links ul li a:hover
+{
+    color: #fff;
+}
+
+.nav-links li ul
+{
+    text-align: right;
+    display: none;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    z-index: 99999;
+}
+
+.navbar-toggler-icon 
+{
+    color: #000;
+    border: none;
+  
+}
+
+.navlinks .navbar-collapse
+{
+    list-style-position: inherit;
+    text-align: right;
+}
+
+
+.container 
+{
+    width: 10%;
+    padding: 25px 30px;
+    background-color:#FAF9F6;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 4px solid #014421;
+}
+
+.logo img 
+{
+    margin-left: 220px;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+.title h2 {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title p
+{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* User's Name styles */
+.container form .user-details 
+{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container form .user-details .input-box 
+{
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% / 2 - 5px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-details .input-box input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #014421;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border: 2px solid #7b1111;
+}
+
+/* User's Gender styles */
+form .gender-details .gender-title {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+form .category label 
+{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+form .category label:hover 
+{
+    color: #014421
+}
+   
+form .category label .dot 
+{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    font-family: 'Poppins', sans-serif;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three 
+{
+    background: #014421;
+    border-color: #d9d9d9;
+}
+
+form input[type="radio"] 
+{
+    display: none;
+}
+
+/* User's other details styles */
+.container form .other-details {
+    padding-top: 10px;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+
+form .other-details .input-box {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% / 2 - 5px);
+}
+
+.other-details .input-box .details {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.other-details .input-box input {
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #014421;
+    padding-left: 15px;
+    font-size: 14px;
+    border-bottom-width: 2px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.other-details .input-box input:focus,
+.other-details .input-box input:valid {
+    border: 2px solid #7b1111;
+}
+
+/* Sign up button */
+form .button {
+    height: 4vw;
+    width: 100%;
+    justify-self: center;
+}
+
+form .button input {
+    height: 80%;
+    width: 20%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #014421;
+    font-family: 'Poppins', sans-serif;
+}
+
+form .button input:hover 
+{
+    background: #7b1111;
+}
+
+
+.ui-datepicker .ui-datepicker-header 
+{ 
+    position:relative; 
+    padding:2px 0px 2px 0px; 
+    border: 1px solid #fff; 
+    background: #014421;
+    color: #fff;
+}
+
+
+ul.ui-autocomplete {
+    font-size: 14px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
